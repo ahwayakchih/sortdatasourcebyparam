@@ -14,13 +14,6 @@
 
 		public function getSubscribedDelegates(){
 			return array(
-/*
-				array(
-					'page' => '/backend/',
-					'delegate' => 'AdminPagePostGenerate',
-					'callback' => 'modifyHTMLSource'
-				),
-*/
 				array(
 					'page' => '/backend/',
 					'delegate' => 'InitaliseAdminPageHead',
@@ -28,33 +21,7 @@
 				),
 			);
 		}
-/*
-		public function modifyHTMLSource($ctx) {
-			// @ctx - context array contains: $output
 
-			$callback = Symphony::Engine()->getPageCallback();
-			if ($callback['driver'] != 'blueprintsdatasources' || !is_array($callback['context'])) return;
-
-			$handle = NULL;
-			if ($callback['context'][0] == 'edit' && !empty($callback['context'][1])) {
-				$handle = $callback['context'][1];
-			}
-
-			$sort = '';
-			$order = '';
-			if (!empty($handle)) {
-				$datasourceManager = new DatasourceManager(Symphony::Engine());
-				$existing =& $datasourceManager->create($handle, NULL, false);
-				if (!empty($existing)) {
-					$sort = $existing->dsParamSORT;
-					$order = ($existing->dsParamORDER == 'rand' ? 'random' : $existing->dsParamORDER);
-				}
-			}
-
-			$ctx['output'] = preg_replace('%(<select[^>]+name=")fields\[sort\]"%', '<input type="text" name="fields[sort-input]" id="sort-input" value="'.$sort.'"/>$1fields[sort]" id="sort"', $ctx['output']);
-			$ctx['output'] = preg_replace('%(<select[^>]+name=")fields\[order\]"%', '<input type="text" name="fields[order-input]" id="order-input" value="'.$order.'"/>$1fields[order]" id="order"', $ctx['output']);
-		}
-*/
 		public function addJavaScriptAndCSS() {
 			$callback = Symphony::Engine()->getPageCallback();
 			if ($callback['driver'] != 'blueprintsdatasources' || !is_array($callback['context'])) return;
