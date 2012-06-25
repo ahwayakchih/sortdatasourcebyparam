@@ -1,9 +1,10 @@
 # Sort Data Source by Parameters
 
-- Version: 1.0
+- Version: 1.1
 - Author: Marcin Konicki (http://ahwayakchih.neoni.net)
-- Build Date: 22 April 2011
-- Requirements: Symphony version 2.2 or later.
+- Build Date: 25 June 2012
+- Requirements: Symphony version 2.3 or later.
+- Text rendered on screenshots was rendered with Lobster font (http://www.impallari.com/lobster/) created by Pablo Impallari.
 
 ## Overview
 
@@ -16,6 +17,7 @@ Modifies Data Source edit page to allow entering parameters to be used for sort 
 
 ## Changelog
 
+- **1.1** Update for Symphony 2.3.
 - **1.0** Initial release.
 
 

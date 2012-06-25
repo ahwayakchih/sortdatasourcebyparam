@@ -3,12 +3,12 @@
 	
 		public function about(){
 			return array('name' => __('Sort Data Source by Parameters'),
-						 'version' => '1.0',
-						 'release-date' => '2011-04-22',
+						 'version' => '1.1',
+						 'release-date' => '2012-06-25',
 						 'author' => array('name' => 'Marcin Konicki',
 										   'website' => 'http://ahwayakchih.neoni.net',
 										   'email' => 'ahwayakchih@neoni.net'),
-						 'description' => __('Modifies Data Source edit page to allow entering parameters to be used for sort and order options.')
+						 'description' => __('Modifies Data Source edit page to allow specyfying parameters that will be used for sort and order options.')
 			);
 		}
 
@@ -36,8 +36,7 @@
 			$sort = '';
 			$order = '';
 			if (!empty($handle)) {
-				$datasourceManager = new DatasourceManager(Symphony::Engine());
-				$existing =& $datasourceManager->create($handle, NULL, false);
+				$existing = DatasourceManager::create($handle, NULL, false);
 				if (!empty($existing)) {
 					$sort = $existing->dsParamSORT;
 					$order = ($existing->dsParamORDER == 'rand' ? 'random' : $existing->dsParamORDER);

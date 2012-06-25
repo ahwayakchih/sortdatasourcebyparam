@@ -1,0 +1,25 @@
+<extension id="templatedtextformatters" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Sort Data Source by Parameters</name>
+	<description>Modifies Data Source edit page to allow entering parameters to be used for sort and order options.</description>
+	<repo type="github">https://github.com/ahwayakchih/sortdatasourcebyparam</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/67477/</url>
+	<url type="issues">https://github.com/ahwayakchih/sortdatasourcebyparam/issues</url>
+	<types>
+		<type>Data Sources</type>
+		<type>Interface</type>
+	</types>
+	<authors>
+		<author>
+			<name github="ahwayakchih" symphony="ahwayakchih">Marcin Konicki</name>
+			<email>ahwayakchih@neoni.net</email>
+			<website>http://ahwayakchih.neoni.net</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.1" date="2012-06-25" min="2.2">Update for Symphony 2.3.</release>
+		<release version="1.0" date="2011-04-22" min="2.2">Initial release.</release>
+	</releases>
+	<media>
+		<item type="image" url="https://github.com/ahwayakchih/sortdatasourcebyparam/raw/master/screenshots/flyer.png">Screenshots.</item>
+	</media>
+</extension>
