@@ -1,4 +1,4 @@
-<extension id="templatedtextformatters" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+<extension id="sortdatasourcebyparam" xmlns="http://symphony-cms.com/schemas/extension/1.0">
 	<name>Sort Data Source by Parameters</name>
 	<description>Modifies Data Source edit page to allow entering parameters to be used for sort and order options.</description>
 	<repo type="github">https://github.com/ahwayakchih/sortdatasourcebyparam</repo>
