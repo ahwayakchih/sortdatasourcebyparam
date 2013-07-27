@@ -16,6 +16,7 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="1.2" date="2013-07-27" min="2.3.3">Update for Symphony 2.3.3.</release>
 		<release version="1.1" date="2012-06-25" min="2.2">Update for Symphony 2.3.</release>
 		<release version="1.0" date="2011-04-22" min="2.2">Initial release.</release>
 	</releases>
